@@ -1,53 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-        <meta charset="utf-8" />
-        <title>Siwei Yang ' Data Science</title>
-        <link rel="stylesheet" href="https://wayag.github.io/theme/css/main.css" />
-        <link href="https://wayag.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Siwei Yang ' Data Science Atom Feed" />
+    <title> Siwei Yang ' Data Science </title>
+    <link rel="shortcut icon" href="https://wayag.github.io/images/Flow.jpg" />
 
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <script src="https://wayag.github.io/theme/js/jquery-3.1.1.min.js"></script>
+
+    <!-- extra css -->
+
+    <!-- uikit basic -->
+    <link rel="stylesheet" href="https://wayag.github.io/theme/css/uikit.min.css"/>
+    <script src="https://wayag.github.io/theme/js/uikit.min.js"></script>
+
+    <!-- uk components -->
+    <link rel="stylesheet" href="https://wayag.github.io/theme/css/components/sticky.css"/>
+    <script src="https://wayag.github.io/theme/js/components/sticky.js"></script>
+    <link rel="stylesheet" href="https://wayag.github.io/theme/css/components/search.css"/>
+    <script src="https://wayag.github.io/theme/js/components/search.js"></script>
+
+    <!-- self defined  -->
+    <link rel="stylesheet" href="https://wayag.github.io/theme/css/highlight.css"/>
+    <link rel="stylesheet" href="https://wayag.github.io/theme/css/main.css"/>
+
 </head>
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://wayag.github.io/">Siwei Yang ' Data Science </a></h1>
-                <nav><ul>
-                    <li><a href="https://wayag.github.io/category/images.html">Images</a></li>
-                    <li><a href="https://wayag.github.io/category/posts.html">posts</a></li>
+    <main class="jojo-theme">
+        <div class="uk-container uk-container-center">
+
+            <!-- nav -->
+            <nav id="jojo-page-top" class="uk-navbar jojo-main-nav">
+                <a href="https://wayag.github.io" class="uk-navbar-brand"> Siwei Yang ' Data Science </a>
+
+                <ul class="uk-navbar-nav">
+                        <li >
+                            <a href="http://localhost:8000\pages\about-me"> About me </a>
+                        </li>
+                        <li class="uk-parent" data-uk-dropdown>
+                            <a href="http://localhost:8000\categories.html"> Category </a>
+                                <div class="uk-dropdown uk-dropdown-navbar">
+                                    <ul class="uk-nav uk-nav-navbar">
+                                            <li class="uk-nav-header">
+                                                    Programming
+                                            </li>
+                                            <li >
+                                                    <a href="http://localhost:8000\category\python.html"> python </a>
+                                            </li>
+                                            <li >
+                                                    <a href="http://localhost:8000\category\plot.html"> plot </a>
+                                            </li>
+                                            <li class="uk-nav-divider">
+                                            </li>
+                                            <li >
+                                                    <a href="http://localhost:8000\category\misc.html"> misc </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li >
+                            <a href="http://localhost:8000\archives.html"> Archives </a>
+                        </li>
                 </ul>
-                </nav>
-        </header><!-- /#banner -->
-<ul>
-    <li><a href="https://wayag.github.io/category/images.html">Images</a></li>
-    <li><a href="https://wayag.github.io/category/posts.html">posts</a></li>
-</ul>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="https://wayag.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+                <div class="uk-navbar-flip">
+                    <div class="uk-navbar-content">
+                        <form class="uk-search" data-uk-search="{source:'my-results.json'}" action="https://wayag.github.io/search.html">
+                            <input id="tipue_search_input" class="uk-search-field" type="search" name="q" autocomplete="off" required placeholder="Search...">
+                        </form>
+                    </div>
+                </div>
 
-        <footer id="contentinfo" class="body">
-                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
-        </footer><!-- /#contentinfo -->
+            </nav>
+
+            <div class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-hover" id="jojo-location-panel">
+                <ul class="uk-breadcrumb">
+                    <li><a href="#" class="uk-icon-map-marker"></a></li>
+                    <li><a href="https://wayag.github.io"> home </a></li>
+    <li class="uk-active"><span> category </span></li>
+                </ul>
+            </div>
+
+            <div class="uk-grid uk-margin-large-top">
+                <div class="uk-width-medium-1-10">
+
+                    <div class="uk-panel jojo-share" data-uk-sticky>
+                        <ul class="uk-nav uk-nav-side">
+                            <li>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://wayag.github.io" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" taget="_blank" class="uk-button">
+                                    <i class="uk-icon-facebook-square"></i> Share
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/intent/tweet?text=https%3A//wayag.github.io&url=https://wayag.github.io&via=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="uk-button" target="_blank">
+                                    <i class="uk-icon-twitter"></i> Share
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/share?url=https://wayag.github.io" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" target="_blank" class="uk-button">
+                                    <i class="uk-icon-google-plus-square"></i> Share
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="uk-panel jojo-share" data-uk-sticky="{top:300}">
+                        <ul class="uk-nav uk-nav-side">
+                            <li>
+                                <a href="#jojo-page-top" class="uk-button" data-uk-smooth-scroll>
+                                    <i class="uk-icon-chevron-up"></i> Top
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#jojo-page-bottum" class="uk-button" data-uk-smooth-scroll>
+                                    <i class="uk-icon-chevron-down"></i> Bot
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="uk-width-medium-7-10">
+                    <div class="uk-margin-top">
+                        <!-- content -->
+    <article class="uk-article">
+            <dl class="uk-description-list-line">
+                <dt> <a href="https://wayag.github.io/category/Plot.html"> Plot </a></dt>
+                <dd> Totally 1 articles </dd>
+            </dl>
+            <dl class="uk-description-list-line">
+                <dt> <a href="https://wayag.github.io/category/python.html"> python </a></dt>
+                <dd> Totally 2 articles </dd>
+            </dl>
+    </article>
+                    </div>
+                </div>
+                <div class="uk-width-medium-2-10">
+
+                    <!-- author info -->
+                    <div class="uk-panel uk-panel-box">
+                        <div class="uk-panel-badge uk-badge"> About Me </div>
+                        <h3 class="uk-panel-title"> Siwei Yang </h3>
+                        <img class="uk-thumbnail uk-thumbnail-small uk-align-center"
+                             src="https://wayag.github.io/images/Flow.jpg"
+                             alt="Siwei Yang">
+                        <p>
+                            <ul class="uk-list">
+                                   <li> I am <a href="#">machine learning</a></li>
+                                   <li> I am <a href="#">data science</a></li>
+                            </ul>
+                                <p> Hi, my name is Siwei </p>
+                        </p>
+                        <p class="uk-text-right">
+                            <a href="http://localhost:8000\pages\about-me"> More About Me... </a>
+                        </p>
+                        <hr>
+                            <h3 class="uk-panel-title"> Contacts </h3>
+                                <a href="#"
+                                   class=" uk-icon-hover                                           uk-icon-medium
+                                          uk-align-left
+                                          uk-icon-envelope-square">
+                                </a>
+                                <a href="#"
+                                   class=" uk-icon-hover                                           uk-icon-medium
+                                          uk-align-left
+                                          uk-icon-facebook-square">
+                                </a>
+                                <a href="#"
+                                   class=" uk-icon-hover                                           uk-icon-medium
+                                          uk-align-left
+                                          uk-icon-github-square">
+                                </a>
+                                <a href="#"
+                                   class=" uk-icon-hover                                           uk-icon-medium
+                                          uk-align-left
+                                          uk-icon-google-plus-square">
+                                </a>
+                    </div>
+
+                    <!-- newest articles -->
+                    <div class="uk-panel uk-panel-box">
+                        <div class="uk-panel-badge uk-badge uk-badge-danger"> Newest </div>
+                        <h3 class="uk-panel-title"> Newest Articles </h3>
+                        <ul class="uk-list uk-list-space">
+                                <li><a href="category/plot/third-post/"> Third Post </a></li>
+                                <li><a href="category/python/second-post/"> Second Post </a></li>
+                                <li><a href="category/python/first-post/"> First Post </a></li>
+                        </ul>
+                    </div>
+
+                            <div class="uk-panel uk-panel-box">
+                                    <div class="uk-panel-badge uk-badge uk-badge-danger">
+                                        Love
+                                    </div>
+                                    <h3 class="uk-panel-title"> My Favorite Beach </h3>
+                                    <img class="uk-thumbnail uk-thumbnail-small uk-align-center" src="https://wayag.github.io/images/Beach.jpg" alt="My Favorite Beach">
+                                <p> I really love it! </p>
+                            </div>
+
+                    <!-- related links -->
+                    <div class="uk-panel uk-panel-box">
+                       <ul class="uk-nav uk-nav-parent-icon" data-uk-nav>
+                           <li class="uk-parent">
+                               <a href="#"> Related Links </a>
+                               <ul class="uk-nav-sub">
+                                       <li><a href="http://getpelican.com/" target="_blank"> Pelican </a></li>
+                                       <li><a href="http://python.org/" target="_blank"> Python.org </a></li>
+                                       <li><a href="http://jinja.pocoo.org/" target="_blank"> Jinja2 </a></li>
+                                       <li><a href="https://github.com/lucachr/pelican-mg" target="_blank"> mg </a></li>
+                               </ul>
+                           </li>
+                       </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer id="jojo-page-bottum" class="uk-clearfix">
+            <div class="uk-panel uk-panel-box uk-margin-large-top uk-container-center">
+                <p class="uk-text-center">
+                    © 2017 Siwei Yang. All rights reserved. <br>
+
+                    Code snippets in the pages are released under
+                    <a href="https://opensource.org/licenses/MIT"> The MIT License </a>
+                    , unless otherwise specified. <br><br>
+
+                    Powered by <a href= "http://docs.getpelican.com/">Pelican</a>.
+                    Theme <a href="#">jojo</a> by <a href="http://dokelung.me/">dokelung</a>
+                    powered by <a href="https://getuikit.com/v2/index.html"> uikit2 </a>
+                    inspired by <a href="https://github.com/lucachr/pelican-mg">mg</a>.
+                </p>
+            </div>
+            </footer>
+
+        </div>
+    </main>
+
 
 </body>
 </html>

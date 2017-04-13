@@ -76,7 +76,7 @@
                 <ul class="uk-breadcrumb">
                     <li><a href="#" class="uk-icon-map-marker"></a></li>
                     <li><a href="https://wayag.github.io"> home </a></li>
-    <li class="uk-active"><span> tag </span></li>
+    <li class="uk-active"><span> search </span></li>
                 </ul>
             </div>
 
@@ -122,16 +122,7 @@
                 <div class="uk-width-medium-7-10">
                     <div class="uk-margin-top">
                         <!-- content -->
-    <article class="uk-article">
-            <dl class="uk-description-list-line">
-                <dt> <a href="https://wayag.github.io/tag/python"> python </a></dt>
-                <dd> Totally 3 articles </dd>
-            </dl>
-            <dl class="uk-description-list-line">
-                <dt> <a href="https://wayag.github.io/tag/plott"> plott </a></dt>
-                <dd> Totally 2 articles </dd>
-            </dl>
-    </article>
+    <div id="tipue_search_content"></div>
                     </div>
                 </div>
                 <div class="uk-width-medium-2-10">
@@ -236,6 +227,20 @@
         </div>
     </main>
 
+    <script src="https://wayag.github.io/theme/js/tipuesearch/tipuesearch_content.js"></script>
+    <script src="https://wayag.github.io/theme/js/tipuesearch/tipuesearch_set.js"></script>
+    <script src="https://wayag.github.io/theme/js/tipuesearch/tipuesearch.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#tipue_search_input').tipuesearch({
+                'mode' : 'json',
+                'show': 10,
+                'newWindow': false,
+                'showURL': false,
+                'contentLocation': 'https://wayag.github.io/tipuesearch_content.json'
+            });
+        });
+    </script>
 
 </body>
 </html>
