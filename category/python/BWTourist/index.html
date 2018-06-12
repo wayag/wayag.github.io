@@ -9,7 +9,8 @@
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
     <title>Tourists in Baden-Württemberg - Siwei Yang 's Data Science</title>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
    
         <link rel="stylesheet"
               href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -1066,15 +1067,6 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h1>Table of Contents<span class="tocSkip"></span></h1></p>
-<div class="toc"><ul class="toc-item"><li><span><a data-toc-modified-id="1)-Data-reading-and-preoprocessing-1" href="#1)-Data-reading-and-preoprocessing"><span class="toc-item-num">1  </span>1) Data reading and preoprocessing</a></span></li><li><span><a data-toc-modified-id="2)-Visualizaiton-:-Plotting-time-series-2" href="#2)-Visualizaiton-:-Plotting-time-series"><span class="toc-item-num">2  </span>2) Visualizaiton : Plotting time series</a></span></li><li><span><a data-toc-modified-id="3)-Time-Series-Analysis-3" href="#3)-Time-Series-Analysis"><span class="toc-item-num">3  </span>3) Time Series Analysis</a></span><ul class="toc-item"><li><span><a data-toc-modified-id="3.a)-Correlation-3.1" href="#3.a)-Correlation"><span class="toc-item-num">3.1  </span>3.a) Correlation</a></span></li><li><span><a data-toc-modified-id="3.b)-Modeling-of-Time-Series-3.2" href="#3.b)-Modeling-of-Time-Series"><span class="toc-item-num">3.2  </span>3.b) Modeling of Time Series</a></span><ul class="toc-item"><li><span><a data-toc-modified-id="UK-3.2.1" href="#UK"><span class="toc-item-num">3.2.1  </span>UK</a></span></li><li><span><a data-toc-modified-id="Italy-3.2.2" href="#Italy"><span class="toc-item-num">3.2.2  </span>Italy</a></span></li><li><span><a data-toc-modified-id="France-3.2.3" href="#France"><span class="toc-item-num">3.2.3  </span>France</a></span></li></ul></li></ul></li><li><span><a data-toc-modified-id="Conclusion-4" href="#Conclusion"><span class="toc-item-num">4  </span>Conclusion</a></span></li></ul></div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p>I 'm living in Baden-Württemberg, which is one of German Federal Lands. During my vacations I always see flood of holidaymakers. So I was just wondering, how many tourists are visiting this land. One day I occasionally ran into some interesting statistics about the tourists in this land, this information are provided by its official <a href="http://www.statistik.baden-wuerttemberg.de/">statistical agency </a>. Specifically, there are <a href="http://www.statistik.baden-wuerttemberg.de/TourismGastgew/Tourismus/LRt14Laender.jsp">annual statistical data</a> about foreign tourists who came from 10 different countries and have visited Baden-Württemberg since 1960. Actually the data can be treated as several time series.</p>
 <p>So let 's take a look, what the data can tell us. In this post I 'm focusing on the number of tourists as well as the number of overnight. I will first visualization of the trends of the given time series, then conduct some basic time series analysis. At the end of this post I will try to forecast the average number of overnight for French tourist in next 4 years.</p>
 </div>
@@ -1613,10 +1605,10 @@ animation.write_videofile("BWTouris.mp4", fps=1,bitrate= '5000k');
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div id="3047991f-4dc3-4bf6-82a5-e6e0ef9c5d45"></div>
+<div id="989d8080-a4f4-480e-80d7-728cda3c2276"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#3047991f-4dc3-4bf6-82a5-e6e0ef9c5d45');
+var element = $('#989d8080-a4f4-480e-80d7-728cda3c2276');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -2433,10 +2425,10 @@ For example Uk and Belgium, the corresponding correlation coefficient is 0.77271
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div id="c4c195e9-5ceb-4fd9-8cd6-6ade3758d789"></div>
+<div id="b8c817b4-f176-4c79-b0c9-6de696105072"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#c4c195e9-5ceb-4fd9-8cd6-6ade3758d789');
+var element = $('#b8c817b4-f176-4c79-b0c9-6de696105072');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -3312,10 +3304,10 @@ to recover some structures from these time series.</p>
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div id="14e2f0c0-402e-423e-a59a-cdbec8040ba2"></div>
+<div id="6c407b68-2d8b-4e22-8c91-539f8bd4767b"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#14e2f0c0-402e-423e-a59a-cdbec8040ba2');
+var element = $('#6c407b68-2d8b-4e22-8c91-539f8bd4767b');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -4117,10 +4109,10 @@ if (IPython.notebook.kernel != null) {
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div id="654131ab-f876-49b2-9d00-d9ce938094fa"></div>
+<div id="c966557d-669d-4799-b670-26c944089bdd"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#654131ab-f876-49b2-9d00-d9ce938094fa');
+var element = $('#c966557d-669d-4799-b670-26c944089bdd');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -4922,10 +4914,10 @@ if (IPython.notebook.kernel != null) {
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div id="ad5a827d-8f21-478a-9a78-e68a44d0c180"></div>
+<div id="56d14fc6-8321-4ed9-9fc3-491e7e5ffe07"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#ad5a827d-8f21-478a-9a78-e68a44d0c180');
+var element = $('#56d14fc6-8321-4ed9-9fc3-491e7e5ffe07');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -5837,10 +5829,10 @@ if (IPython.notebook.kernel != null) {
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div id="fd501b8f-1058-41fd-a277-b834f8f9807c"></div>
+<div id="0c529e63-b195-49be-959d-c31118d5122b"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#fd501b8f-1058-41fd-a277-b834f8f9807c');
+var element = $('#0c529e63-b195-49be-959d-c31118d5122b');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
